@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formatar.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data"> 
+    <fieldset>
+      <legend>Novo Contato</legend>
+        <br>
+            <div class="fonte"><labelfor="Nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome"><br><br>
+            </div>
+            <div class="fonte"><labelfor="Idade">Idade:</labelfor> 
+            <input type="text" id= "idade" name="idade"><br><br>
+        </div>
+            <div class="fonte"><labelfor="Sexo">Sexo:</label><br>
+            <input type="radio" name="Sexo" value="M">Masculino
+            <input type="radio" name="Sexo" value="F">Feminino<br><br>
+            </div>
+            <div class="fonte">
+            <labelfor="data">Data de Nascimento:</label><br>
+            <input type="date" name="Data de nascimento"><br><br>
+            </div>
+            <div class="fonte">
+                <labelfor="parente">Parente</labelfor>
+                <input type="checkbox" id="parente" name="parente"><br><br>
+            </div>
+            <div class="fonte">
+                <labelfor="tipodecontato">Origem do Contato:</labelfor>
+                <select>
+                    <option  value="trabalho">Trabalho</option>
+                    <option  value="familia">Família</option>
+                    <option  value="festa">Festa</option>
+                    <option  value="outros">Outros</option>
+                </select>
+            </div><br>
+            <div class="fonte"><labelfor="Endereço">Endereço:</label>
+            <select>
+                <option value="Rua">Rua</option>
+                <option value="Av.">Avenida</option>
+                <option value="Estrada">Estrada</option>
+                <option value="Beco">Beco</option>
+            </select>
+            <input name= "Endereço" placeholder="Digite o endereço">
+            <input name= "Número" placeholder="Digite o número">
+            <input name= "Complemento" placeholder="Complemento"><br> <br>
+        </div>
+        <div class="fonte">
+            <label for="Telefone">Telefone para contato:</label>
+            <input type="tel"name="Telefone" pattern"\([0-9]{2})\[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+        </div><br>
+        <div class="fonte">    
+        <label for="email">E-mail</label>
+            <input type= "email" name="E-mail" id="E-mail" placeholder="Digite o seu e-mail"><br><br>
+        </div>
+        <div class="fonte">
+    <label for="foto">Foto</label>
+    <input type="file" id="foto" name="foto"><br>
+        </div><br>
+        <div class="fonte">
+            <input type="submit"name="salvar">
+            <input type="reset" name="Cancelar">
+        </div>    
+</fieldset>    
+</form><br>
+<a href="index.html"><button>Voltar ao Menu Inicial</button></a>
+</body>
+</html>
